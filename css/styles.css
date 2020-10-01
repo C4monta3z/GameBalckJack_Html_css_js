@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive;
+    color: antiquewhite;
+}
+
+.fondo{
+    background-color: #1a3003;
+}
+
+.grid-container {
+    display: grid;
+    grid: 150px/  100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 5px;
+  }
+  
+.grid-container > div {
+background-color: rgba(255, 255, 255, 0.8);
+text-align: center;
+padding: 20px ;
+font-size: 30px;
+}
