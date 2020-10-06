@@ -1,0 +1,4 @@
+################# Extencion de vs ##############
+#Live Serve --> recarga la pagina
+# Flexbox --> competencia de bootstrap
+
