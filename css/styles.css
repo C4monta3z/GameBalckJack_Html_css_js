@@ -2,6 +2,7 @@ h1{
     text-align: center;
     font-family: 'Sansita Swashed', cursive;
     color: antiquewhite;
+    font-size: 50px;
 }
 
  .fondo{
@@ -42,16 +43,20 @@ body{
 }
 
 .tricki-cell{
-    background-color:#bcbe29;
+    /* background-color:#bcbe29; */
         /* background-color: #062726; */
+        background-image: url(../img/black.jpg);
+        display: block;
+
         border-radius: 15px;
         font-size: 50px;
-        margin: 10px;
+        margin: auto;
         margin-left: 50px;
         margin-right: 50px;
         height: 125px; 
         width: 125px;
     }
+    
 
 .main-container{
     /* background-color: red;  */
