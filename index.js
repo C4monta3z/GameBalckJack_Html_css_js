@@ -1,6 +1,27 @@
 function appendCardToParend(parent, number){
   let myNewCard = document.createElement('div');
-      myNewCard.className = "centered-container tricki-cell ";
+      myNewCard.className = "centered-container tricki-cell adjustCard";
+      myNewCard.style="";
+
+      fetch('https://deckofcardsapi.com/api/deck/dn35dyclkcwt/draw/?count=2',{
+
+          method: 'Get'
+      }).then(res => {
+        res.json()
+          .then(DataCard => {
+              console.log('Los Datos obtenidos son:', DataCard);
+              myNewCard.style = "background-image: url(" +
+              DataCard.cards[0].image + ")";
+              
+                    parent.appendChild(myNewCard);
+                })
+                .catch(err => {
+                      console.log(err);
+                });
+          })
+          .catch(err => {
+              console.log(err);
+          });
 
       myNewCard.addEventListener('mouseover', () => {
         myNewCard.classList.add("onhover-card");
